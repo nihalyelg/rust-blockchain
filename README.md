@@ -76,5 +76,11 @@ Hash: 51ed09e5886083e91bc64a2fb5ef498d51b60881854e0219ab80a00e8de67fbd
 Is blockchain valid? true
 ```
 
+### 📜 Assumptions
+This blockchain focuses on core fundamentals like block linking, cryptographic hashing, and Proof of Work (PoW). The following design choices were made intentionally:
+
+✅ Runs Locally: No peer-to-peer networking yet, but it can be extended for multi-node communication.
+✅ In-Memory Storage: Blocks are stored in memory for simplicity; can be extended to use databases.
+✅ Basic Proof of Work (PoW): Adjustable difficulty; future versions can add dynamic difficulty adjustment.
 
 
