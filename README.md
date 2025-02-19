@@ -53,27 +53,33 @@ Each new block links to the previous block using its hash, ensuring immutability
 
 ## Example Output
 ```sh
---- Blockchain ---
+Block mined! Nonce: 17323, Hash: 0000512862acf8bbfcd9eaa0ef7dbfc09dd43dbf52a246e82662da68cb634830
+Block mined! Nonce: 451260, Hash: 00006d3b11c3bb761c3115d2eb47141cb1f20f3b2842cecd12afeb10040a4044
+
+--- Blockchain ---    
 
 Block #0:
 ----------------------
 Index: 0
-Timestamp: 1739832500
+Timestamp: 1739965180 
 Data: Genesis Block
 Previous Hash: 0
-Hash: c5c23d1b30fbba1171faedff08b3e909d1a7fcd5d69942bc6701b8dbee7fdd81
+Hash: 0000512862acf8bbfcd9eaa0ef7dbfc09dd43dbf52a246e82662da68cb634830
+Nonce: 17323
 ----------------------
 
 Block #1:
 ----------------------
 Index: 1
-Timestamp: 1739832501
+Timestamp: 1739965181
 Data: Transaction: A pays B 10 BTC
-Previous Hash: c5c23d1b30fbba1171faedff08b3e909d1a7fcd5d69942bc6701b8dbee7fdd81
-Hash: 51ed09e5886083e91bc64a2fb5ef498d51b60881854e0219ab80a00e8de67fbd
+Previous Hash: 0000512862acf8bbfcd9eaa0ef7dbfc09dd43dbf52a246e82662da68cb634830
+Hash: 00006d3b11c3bb761c3115d2eb47141cb1f20f3b2842cecd12afeb10040a4044
+Nonce: 451260
 ----------------------
 
 Is blockchain valid? true
+
 ```
 
 ### 📜 Assumptions
