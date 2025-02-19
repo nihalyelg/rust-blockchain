@@ -31,10 +31,50 @@ sha2 = "0.9"   # SHA-256 hashing for block integrity
 chrono = "0.4" # Timestamping each block
 ```
 
-4️⃣ Build & Run
+### 4️⃣ Build & Run
 
 ```sh
 cargo run
 ```
+
+## Blockchain Structure
+Each block in the blockchain consists of the following fields:
+
+```rust
+pub struct Block {
+    pub index: u64,          // Position of the block in the blockchain
+    pub timestamp: i64,      // Creation time (Unix timestamp)
+    pub data: String,        // Transaction or message stored in the block
+    pub previous_hash: String, // Hash of the previous block
+    pub hash: String,        // SHA-256 hash of the current block
+}
+```
+Each new block links to the previous block using its hash, ensuring immutability.
+
+## Example Output
+```sh
+--- Blockchain ---
+
+Block #0:
+----------------------
+Index: 0
+Timestamp: 1739832500
+Data: Genesis Block
+Previous Hash: 0
+Hash: c5c23d1b30fbba1171faedff08b3e909d1a7fcd5d69942bc6701b8dbee7fdd81
+----------------------
+
+Block #1:
+----------------------
+Index: 1
+Timestamp: 1739832501
+Data: Transaction: A pays B 10 BTC
+Previous Hash: c5c23d1b30fbba1171faedff08b3e909d1a7fcd5d69942bc6701b8dbee7fdd81
+Hash: 51ed09e5886083e91bc64a2fb5ef498d51b60881854e0219ab80a00e8de67fbd
+----------------------
+
+Is blockchain valid? true
+```
+
 
 
