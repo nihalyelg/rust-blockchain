@@ -18,7 +18,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ### 2️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/rust-blockchain.git
+git clone https://github.com/nihalyelg/rust-blockchain.git
 cd rust-blockchain
 ```
 
