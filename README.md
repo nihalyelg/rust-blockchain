@@ -22,7 +22,7 @@ git clone https://github.com/your-username/rust-blockchain.git
 cd rust-blockchain
 ```
 
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 Ensure your Cargo.toml contains these dependencies:
 
 ```toml
