@@ -15,3 +15,26 @@ Ensure you have **Rust and Cargo** installed. If not, install them with:
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+### 2️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/rust-blockchain.git
+cd rust-blockchain
+```
+
+3️⃣ Install Dependencies
+Ensure your Cargo.toml contains these dependencies:
+
+```toml
+[dependencies]
+sha2 = "0.9"   # SHA-256 hashing for block integrity
+chrono = "0.4" # Timestamping each block
+```
+
+4️⃣ Build & Run
+
+```sh
+cargo run
+```
+
+
